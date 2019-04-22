@@ -1,0 +1,14 @@
+this is the awesome, incomparable, amazing, super
+program bob that greets bob.
+
+To build it:
+
+make
+
+To run it:
+
+./bob
+
+To remove all but source:
+
+make distclean
