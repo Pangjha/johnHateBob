@@ -2,8 +2,8 @@
 //Bobprogram
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "lovebob.h"
 int main(void) {
-	printf("Hi Bob!\n");
+	express_love(10U,"Hi Bob!");
 	return EXIT_SUCCESS;
 }

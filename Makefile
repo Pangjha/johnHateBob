@@ -9,16 +9,19 @@ LIBS=
 
 all:	bob
 
-bob:	bob.o
+bob:	bob.o lovebob.o
 	$(CC) $(LDFLAGS) $^ -o $@ $(LIBS)
 
 bob.o:	bob.c
+	$(CC) $(CPPFLAGS) $(CFLAGS) -c $< -o $@
+
+lovebob.o:	lovebob.c
 	$(CC) $(CPPFLAGS) $(CFLAGS) -c $< -o $@
 
 distclean:	clean
 	$(RM) bob
 
 clean:
-	$(RM) bob.o core
+	$(RM) bob.o lovebob.o core
 
 .PHONY:	all distclean clean
